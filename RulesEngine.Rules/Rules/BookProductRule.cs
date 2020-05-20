@@ -8,6 +8,7 @@ namespace RulesEngine.Rules
     {
         public string Apply()
         {
+            Console.WriteLine($"Applying {nameof(BookProductRule)}");
             return "Creating a duplicate packing slip for the royalty department";
         }
 

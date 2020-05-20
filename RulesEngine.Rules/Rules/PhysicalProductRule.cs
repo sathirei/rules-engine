@@ -8,6 +8,7 @@ namespace RulesEngine.Rules
 
         public string Apply()
         {
+            Console.WriteLine($"Applying {nameof(PhysicalProductRule)}");
             return "Generating a packing slip for shipping.";
         }
 

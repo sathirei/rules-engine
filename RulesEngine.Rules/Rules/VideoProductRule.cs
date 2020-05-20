@@ -1,5 +1,6 @@
 ﻿using RulesEngine.Core;
 using RulesEngine.Core.Domain;
+using System;
 
 namespace RulesEngine.Rules.Rules
 {
@@ -7,6 +8,7 @@ namespace RulesEngine.Rules.Rules
     {
         public string Apply()
         {
+            Console.WriteLine($"Applying {nameof(VideoProductRule)}");
             return "Adding a free \"First Aid\" video to the packing slip (the result of a court decision in 1997)";
         }
 

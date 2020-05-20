@@ -1,4 +1,5 @@
 ﻿using RulesEngine.Core;
+using System;
 
 namespace RulesEngine.Rules.Rules
 {
@@ -6,6 +7,7 @@ namespace RulesEngine.Rules.Rules
     {
         public string Apply()
         {
+            Console.WriteLine($"Applying {nameof(CommissionRule)}");
             return "Generating commision payment to the agent";
         }
 
