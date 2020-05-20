@@ -1,7 +1,12 @@
-﻿namespace RulesEngine.Core
+﻿using System;
+
+namespace RulesEngine.Core
 {
     public class OrderLine
     {
+        private Guid id = Guid.NewGuid();
+
+        public Guid Id { get { return id; } }
         public OrderLine(Product product, int quantity)
         {
             this.Product = product;

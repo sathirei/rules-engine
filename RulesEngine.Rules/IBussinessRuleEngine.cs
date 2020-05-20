@@ -9,6 +9,6 @@ namespace RulesEngine.Rules
         public IBussinessRuleEngine AddRule(IRule rule);
 
         public IBussinessRuleEngine RemoveRule(IRule rule);
-        void Process(Order order);
+        List<string> Process(Order order);
     }
 }
