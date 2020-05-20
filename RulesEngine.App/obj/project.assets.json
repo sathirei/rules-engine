@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "RulesEngine.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RulesEngine.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RulesEngine.Core.dll": {}
+        }
+      },
+      "RulesEngine.Rules/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RulesEngine.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RulesEngine.Rules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RulesEngine.Rules.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RulesEngine.Core/1.0.0": {
+      "type": "project",
+      "path": "../RulesEngine.Core/RulesEngine.Core.csproj",
+      "msbuildProject": "../RulesEngine.Core/RulesEngine.Core.csproj"
+    },
+    "RulesEngine.Rules/1.0.0": {
+      "type": "project",
+      "path": "../RulesEngine.Rules/RulesEngine.Rules.csproj",
+      "msbuildProject": "../RulesEngine.Rules/RulesEngine.Rules.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "RulesEngine.Core >= 1.0.0",
+      "RulesEngine.Rules >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\heikru\\.nuget\\packages\\": {},
@@ -39,7 +77,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\heikru\\Documents\\Projects\\rules-engine\\RulesEngine.Core\\RulesEngine.Core.csproj": {
+              "projectPath": "C:\\Users\\heikru\\Documents\\Projects\\rules-engine\\RulesEngine.Core\\RulesEngine.Core.csproj"
+            },
+            "C:\\Users\\heikru\\Documents\\Projects\\rules-engine\\RulesEngine.Rules\\RulesEngine.Rules.csproj": {
+              "projectPath": "C:\\Users\\heikru\\Documents\\Projects\\rules-engine\\RulesEngine.Rules\\RulesEngine.Rules.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

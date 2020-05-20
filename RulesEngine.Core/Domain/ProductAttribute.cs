@@ -2,7 +2,7 @@
 {
     public enum ProductAttribute
     {
-        PHYSICAL,
-        NONPHYSICAL
+        NONPHYSICAL,
+        PHYSICAL
     }
 }

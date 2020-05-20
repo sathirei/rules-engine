@@ -16,7 +16,7 @@ namespace RulesEngine.Core
         public Agent Agent { get; private set; }
         public List<OrderLine> OrderLines { get; private set; }
 
-        internal void Add(OrderLine orderLine)
+        public void Add(OrderLine orderLine)
         {
             var line = this.OrderLines.Find(x => x.Product.Id == orderLine.Product.Id);
 

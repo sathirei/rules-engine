@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.App", "RulesEngine.App.csproj", "{9E702FD2-4831-49FB-926D-08EC0C249BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.App", "RulesEngine.App.csproj", "{9E702FD2-4831-49FB-926D-08EC0C249BD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.Core", "..\RulesEngine.Core\RulesEngine.Core.csproj", "{85DFB487-241A-4328-A00B-7BCCAFB4967D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.Core", "..\RulesEngine.Core\RulesEngine.Core.csproj", "{85DFB487-241A-4328-A00B-7BCCAFB4967D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.Rules", "..\RulesEngine.Rules\RulesEngine.Rules.csproj", "{F3FEA35C-5427-45BB-9645-D05B0A8EFFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.Rules", "..\RulesEngine.Rules\RulesEngine.Rules.csproj", "{F3FEA35C-5427-45BB-9645-D05B0A8EFFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.Core.Test", "..\RulesEngine.Core.Test\RulesEngine.Core.Test.csproj", "{B968302E-27D1-4BB4-9C23-5ECB68387942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.Core.Test", "..\RulesEngine.Core.Test\RulesEngine.Core.Test.csproj", "{B968302E-27D1-4BB4-9C23-5ECB68387942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.Rules.Test", "..\RulesEngine.Rules.Test\RulesEngine.Rules.Test.csproj", "{A62746F4-9069-440B-94A6-27BD2F759160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.Rules.Test", "..\RulesEngine.Rules.Test\RulesEngine.Rules.Test.csproj", "{A62746F4-9069-440B-94A6-27BD2F759160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulesEngine.App.Test", "..\RulesEngine.App.Test\RulesEngine.App.Test.csproj", "{50B1C4EE-FE91-4824-9594-3E0AFC82B42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A62746F4-9069-440B-94A6-27BD2F759160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A62746F4-9069-440B-94A6-27BD2F759160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A62746F4-9069-440B-94A6-27BD2F759160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B1C4EE-FE91-4824-9594-3E0AFC82B42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B1C4EE-FE91-4824-9594-3E0AFC82B42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B1C4EE-FE91-4824-9594-3E0AFC82B42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B1C4EE-FE91-4824-9594-3E0AFC82B42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
