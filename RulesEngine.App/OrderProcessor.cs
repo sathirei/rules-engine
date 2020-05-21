@@ -6,7 +6,7 @@ namespace RulesEngine.Core
 {
     public class OrderProcessor
     {
-        private IBussinessRuleEngine bussinessRuleEngine;
+        private readonly IBussinessRuleEngine bussinessRuleEngine;
 
         public OrderProcessor(IBussinessRuleEngine bussinessRuleEngine, Agent agent)
         {            

@@ -8,7 +8,7 @@ namespace RulesEngine.App
 {
     class Program
     {
-        static public void Main(String[] args)
+        public static void Main()
         {
             var ruleEngine = SetUpBusinessRuleEngine();
             var orderProcessor = new OrderProcessor(ruleEngine, new Agent { Name = "Real Agent" });
@@ -25,7 +25,7 @@ namespace RulesEngine.App
             foreach (var x in results) { Console.WriteLine(x);  };
         }
 
-        private static Product book = new Product
+        private static readonly Product book = new Product
         {
             Attribute = Core.Domain.ProductAttribute.PHYSICAL,
             Name = "Hitchhiker's Guide to the Galaxy",
@@ -34,7 +34,7 @@ namespace RulesEngine.App
             Id = 5
         };
 
-        private static Product membership = new Product
+        private static readonly Product membership = new Product
         {
             Attribute = Core.Domain.ProductAttribute.NONPHYSICAL,
             Name = "5 Month subscription",
@@ -43,7 +43,7 @@ namespace RulesEngine.App
             Id = 6
         };
 
-        private static Product upgrade = new Product
+        private static readonly Product upgrade = new Product
         {
             Attribute = Core.Domain.ProductAttribute.NONPHYSICAL,
             Name = "Upgrade to Premium",
@@ -52,7 +52,7 @@ namespace RulesEngine.App
             Id = 7
         };
 
-        private static Product video = new Product
+        private static readonly Product video = new Product
         {
             Attribute = Core.Domain.ProductAttribute.NONPHYSICAL,
             Name = "Learning to Ski",

@@ -19,7 +19,7 @@ namespace RulesEngine.Rules.Test
         }
 
         [Fact]
-        public void AddRule_Should_Remove_Rule_FromEngine()
+        public void RemoveRule_Should_Remove_Rule_FromEngine()
         {
             IBussinessRuleEngine ruleEngine = new BusinessRuleEngine();
             IRule rule = new PhysicalProductRule();
